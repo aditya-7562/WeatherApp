@@ -92,7 +92,7 @@ body{
 }
 
 /* Styles for smaller screens (up to 767px) */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 767px) {
     .card {
         width: 90%;
         max-width: none;
