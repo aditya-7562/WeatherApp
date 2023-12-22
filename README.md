@@ -32,7 +32,7 @@ Follow the instructions below to get a copy of the project up and running on you
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/aditya-7562/WeatherApp.git
    ```
 
 2. Navigate to the project directory:
