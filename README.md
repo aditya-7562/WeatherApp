@@ -1,46 +1,80 @@
-# WeatherApp
-It's a weather app project for practicing javascript concepts. It's build using only HTML5, CSS3 &amp; Vanilla Javascript.
-It uses OpenWeatherMap Api to fetch real time data from their servers and it's completely free.
+# Weather App
+
+This Weather App is a simple web application that allows users to check the weather conditions for a specific city. It provides information such as temperature, humidity, and wind speed, along with a corresponding weather icon.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **Weather Information:** Retrieve real-time weather data for a specified city.
+- **Responsive Design:** The app is designed to be visually appealing and responsive on various devices, including desktops, tablets, and smartphones.
+- **Error Handling:** Display an error message when the entered city is not found.
+
+## Getting Started
+
+Follow the instructions below to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd weather-app
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. Open the `index.html` file in your preferred web browser.
+
+2. Enter the name of the city in the search input.
+
+3. Click the search button to retrieve and display the weather information.
+
+## Customization
+
+- **API Key:** Replace the placeholder API key in `script.js` with your own OpenWeatherMap API key. Obtain an API key by signing up at [OpenWeatherMap](https://openweathermap.org/).
+  
+- **Images:** Ensure that the images for weather conditions (clouds.png, clear.png, rain.png, drizzle.png, mist.png) are available in the specified paths.
+
+## Contributing
+
+Contributions are welcome! Please follow the [Contributing Guidelines] for details on how to contribute to this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md] file for details.
 
 
+## How It Works
 
-### HTML (index.html)
-The HTML file contains the structure of the web page. It includes the following key elements:
-
-- **DOCTYPE Declaration**: Specifies the HTML version and document type.
-- **Meta Tags**: Define the character set and viewport for responsive design.
-- **Title**: Sets the title of the web page.
-- **Link to Stylesheet**: Connects the HTML file to an external CSS file.
-- **Body**: Contains the main content of the page, including a card with elements for search, error, and weather information.
-- **Script Tag**: Links to an external JavaScript file.
-
-### CSS (style.css)
-The CSS file defines the styling for the web page. Here are the main styles:
-
-- **Global Reset**: Removes default margin and padding and sets the font family.
-- **Body Styling**: Sets the background color for the entire page.
-- **Card Styling**: Defines the appearance of the main card, including width, background gradient, color, margin, border-radius, and padding.
-- **Search Styling**: Styles the search bar, input field, and search button.
-- **Weather Styling**: Defines the appearance of weather-related elements, including the weather icon, temperature, city name, and additional details.
-- **Error Styling**: Styles the error message.
-
-### JavaScript (script.js)
-The JavaScript file contains the logic for fetching weather data and updating the UI. Here's a step-by-step explanation:
-
-1. **API Key and URL**: Defines the OpenWeatherMap API key and base URL for weather data.
-2. **DOM Selection**: Selects HTML elements using querySelector to interact with them in JavaScript.
-3. **checkWeather Function**: This asynchronous function takes a city as a parameter, fetches weather data from the API, and updates the UI based on the response.
-   - It uses the `fetch` function to make an asynchronous HTTP request to the OpenWeatherMap API.
-   - If the response status is 404 (City Not Found), it displays an error message and hides the weather information.
-   - If the response is successful, it parses the JSON data and updates the UI elements with the relevant weather information.
-   - It also sets the appropriate weather icon based on the weather condition.
-4. **Event Listener**: Listens for a click event on the search button. When clicked, it calls the `checkWeather` function with the city entered in the search input.
-
-### How It Works
-1. The user enters a city name in the search input and clicks the search button.
-2. The `checkWeather` function is triggered, which fetches weather data from the OpenWeatherMap API based on the entered city.
-3. If the city is valid, it updates the UI with the weather information and displays the weather icon.
-4. If the city is invalid or not found, it displays an error message.
-5. The application is designed to be responsive with a clean and visually appealing interface.
-
+The user enters a city name in the search input and clicks the search button.
+The checkWeather function is triggered, which fetches weather data from the OpenWeatherMap API based on the entered city.
+If the city is valid, it updates the UI with the weather information and displays the weather icon.
+If the city is invalid or not found, it displays an error message.
+The application is designed to be responsive with a clean and visually appealing interface.
 Remember, the OpenWeatherMap API key used in the example may have usage limitations, and you should replace it with your own API key if you plan to use this code in a production environment.
