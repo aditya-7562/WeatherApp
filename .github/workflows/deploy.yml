@@ -16,5 +16,7 @@ jobs:
       - name: Inject API Key
         run: echo "const apiKey = '${{ secrets.WEATHER_API_KEY }}';" > script.js
 
-      - name: Deploy to GitHub Pages
+      - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
